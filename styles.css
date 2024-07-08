@@ -519,12 +519,13 @@ span {
 
 /* Projects Section */
 .projects {
-
     padding: 50px 0;
     background-color: var(--bg-color); /* Adjust background color as needed */
 }
 
-
+.projects .heading {
+    margin-top: 30px;
+}
 
 .projects-grid {
     display: grid;
@@ -567,7 +568,7 @@ span {
 }
 
 .project-item .btn:hover {
-    background-color: #2100b3; /* Adjust color as needed */
+    background-color: #5377d9; /* Adjust color as needed */
 }
 
 .project-item:hover {
