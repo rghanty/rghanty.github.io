@@ -583,9 +583,6 @@ span {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .projects-grid .project-item:nth-child(5) {
-        grid-column: span 2;
-    }
 }
 
 @media (max-width: 480px) {
