@@ -11,10 +11,10 @@
 }
 
 :root {
-    --bg-color: #293241;
-    --second-bg-color: #3d5a80 ;
-    --text-color: #98c1d9;
-    --main-color: #ee6c4d ;
+    --bg-color: #000000;
+    --second-bg-color: #3b3c3c ;
+    --text-color: #00A19B;
+    --main-color: #C8CCCE ;
 }
 
 html {
@@ -91,6 +91,23 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
+    justify-content: space-between;
+    
+}
+
+.home-img {
+    flex-shrink: 0;
+    width: 400px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid var(--main-color); /* Adds a border */
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
 .home-content {
@@ -116,6 +133,7 @@ section {
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
+    background-clip: text;
     background-position: -33rem 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
@@ -591,6 +609,18 @@ span {
     }
     .projects-grid .project-item {
         grid-column: span 1;
+    }
+}
+
+@media(max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home-img {
+        margin-top: 1rem;
+        width: 300px; /* Resize for smaller screens */
+        height: 300px;
     }
 }
 
